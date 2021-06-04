@@ -7,6 +7,7 @@ body {
 
 h1 {
     text-align: center;
+    font-weight: bold;
 }
 h2 {
     margin-top: 2%;
@@ -15,6 +16,7 @@ h2 {
     animation: bounce; 
     animation-duration: 2s;
     font-size: 1,5rem;
+    font-weight: bold;
 }
 .deja__coment {
     text-align: center;
@@ -26,6 +28,7 @@ h3 {
 
 p {
     text-transform: uppercase;
+    font-weight: 0.5rem;
 }
 
 /*BEM */
