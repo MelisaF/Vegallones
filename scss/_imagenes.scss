@@ -1,0 +1,62 @@
+@import "variables";
+
+.banner__imagen img{
+    height: $alto * 2;
+    width: 100%;
+}
+.logoImg {
+    width: 30%;
+    height: 20%;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    .imgDestacada {
+        width: 80%;
+        height:80%;
+        margin-top: 5%;
+        margin-left: 10%;
+        border-radius: 15%;
+    }
+}
+.imgLogo {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 5%;
+
+}
+.pieLogo {
+    width: 40%;
+    height: 70%;
+    margin-top: 8%;
+    margin-left: 20%;
+}
+/*imagenes de Redes Sociales */
+.imgRed {
+    width: 6%;
+    height: 15%;
+}
+
+.mapa {
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.maps {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.galeria__fotos {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: center;
+    margin-left: 12%;
+    margin-bottom: 5%;
+}    

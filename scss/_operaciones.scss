@@ -1,0 +1,18 @@
+@import "variables";
+
+.banner__imagen img{
+    height: $alto * 2;
+    width: 100%;
+}
+
+
+footer {
+    @if $fondo==claro {
+        background: #c5efaf;
+    }   
+        @else if $fondo ==oscuro {
+            background:beige;
+        }
+
+}
+

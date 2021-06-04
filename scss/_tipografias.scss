@@ -1,0 +1,66 @@
+@import "variables";
+
+body {
+    font-family: $letter-font;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 2%;
+    text-align: center;
+    font-family: $letter-font;
+    animation: bounce; 
+    animation-duration: 2s;
+    font-size: 1,5rem;
+}
+.deja__coment {
+    text-align: center;
+}
+h3 {
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+/*BEM */
+.mapaSitio__title {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 2%;
+    padding-top: 12%;
+}
+
+.mapaSitio__title--lista {
+    list-style: none;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    :hover{
+        color:white;
+    }
+}
+
+/*BEM */
+.red__social--title {
+    font-weight: bold;
+    margin-top:5%;
+    font-size: 1rem;
+}
+
+.error__section {
+    div {
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

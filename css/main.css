@@ -1,0 +1,241 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  animation: bounce;
+  animation-duration: 2s;
+  font-size: 1,5rem; }
+
+.deja__coment {
+  text-align: center; }
+
+h3 {
+  font-weight: bold;
+  margin-top: 2%; }
+
+p {
+  text-transform: uppercase; }
+
+/*BEM */
+.mapaSitio__title {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-left: 2%;
+  padding-top: 12%; }
+
+.mapaSitio__title--lista {
+  list-style: none;
+  text-transform: uppercase; }
+  .mapaSitio__title--lista a {
+    text-decoration: none;
+    color: black; }
+  .mapaSitio__title--lista :hover {
+    color: white; }
+
+/*BEM */
+.red__social--title {
+  font-weight: bold;
+  margin-top: 5%;
+  font-size: 1rem; }
+
+.error__section div a {
+  text-decoration: none;
+  color: black; }
+
+.banner__imagen img {
+  height: 700px;
+  width: 100%; }
+
+.logoImg {
+  width: 30%;
+  height: 20%; }
+
+body {
+  margin: 0%;
+  padding: 0%; }
+
+.section {
+  display: flex;
+  justify-content: center; }
+  .section .imgDestacada {
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 15%; }
+
+.imgLogo {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 5%; }
+
+.pieLogo {
+  width: 40%;
+  height: 70%;
+  margin-top: 8%;
+  margin-left: 20%; }
+
+/*imagenes de Redes Sociales */
+.imgRed {
+  width: 6%;
+  height: 15%; }
+
+.mapa {
+  margin-left: 10%;
+  margin-bottom: 10%; }
+
+.maps {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%; }
+
+.galeria__fotos {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  justify-content: center;
+  margin-left: 12%;
+  margin-bottom: 5%; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+input {
+  transition: all 2s; }
+
+input:hover {
+  width: 60%;
+  font-size: 1.5rem; }
+
+.piePagina {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  justify-items: center; }
+
+.mapaSitio {
+  margin: 6%; }
+
+.red__social {
+  padding-top: 5%;
+  margin-left: 10%; }
+
+/*BEM*/
+.delivery__zone {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-left: 2%; }
+
+.mb-3 {
+  display: flex;
+  align-items: center;
+  width: 50%; }
+
+div span {
+  border-radius: 10%; }
+  div span a {
+    text-decoration: none;
+    color: black; }
+
+.error__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%; }
+
+/*MEDIA QUERIES*/
+@media (max-width: 568px) {
+  h1 {
+    font-size: 0.6rem; }
+  h2 {
+    font-size: 0.8rem;
+    font-weight: bold; }
+  h3 {
+    font-size: 0.7rem; }
+  h6 {
+    font-size: 0.6rem;
+    font-weight: bold; }
+  .mapaSitio__title {
+    font-size: 0.6rem; }
+  .mapaSitio__title--lista {
+    font-size: 0.7rem; }
+  p {
+    font-size: 0.5rem; }
+  .sectionCuadro {
+    display: flex;
+    align-items: center; }
+  ul li a {
+    font-size: 0.5rem; }
+  .imgLogo {
+    width: 20%;
+    height: 20%; }
+  .banner__imagen img {
+    height: 100px; }
+  .galeriaImg__fotos {
+    width: 60%;
+    height: 80%; }
+  .btn__note {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem; }
+  span a {
+    text-decoration: none;
+    color: black; } }
+
+@media (max-width: 768px) {
+  .banner img {
+    height: 300px; }
+  .pieLogo {
+    width: 80%;
+    height: 80%; }
+  h3 {
+    font-size: 1rem; }
+  .section__fotos--texto {
+    width: 50%;
+    height: 60%;
+    font-size: 0.7rem; } }
+
+.banner__imagen img {
+  height: 700px;
+  width: 100%; }
+
+footer {
+  background: #c5efaf; }
+
+.zonecaba {
+  background: #58D68D; }
+
+.zonenorte {
+  background: #52BE80; }
+
+.zoneoeste {
+  background: #DAF7A6; }
+
+.zonesur {
+  background: #B8E664; }
+
+.btn__note--productos {
+  background-color: #A9DE49;
+  border-radius: 50%;
+  width: 10%;
+  padding-left: 1%; }
+
+.btn__note--ubicacion {
+  background-color: #C0F165;
+  border-radius: 50%;
+  width: 10%;
+  padding-left: 1%; }
+
+.btn__note--aqui {
+  background-color: red;
+  border-radius: 50%;
+  width: 10%;
+  padding-left: 1%; }
