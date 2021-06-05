@@ -1,9 +1,5 @@
 @import "variables";
 
-.banner__imagen img{
-    height: $alto * 2;
-    width: 100%;
-}
 .logoImg {
     width: 30%;
     height: 20%;
@@ -12,23 +8,7 @@
 body {
     margin: 0%;
     padding: 0%;
-}
-.section {
-    display: flex;
-    justify-content: center;
-    .imgDestacada {
-        width: 80%;
-        height:80%;
-        margin-top: 5%;
-        margin-left: 10%;
-        border-radius: 15%;
-    }
-}
-.imgLogo {
-    width: 30%;
-    height: 30%;
-    margin-bottom: 5%;
-
+    background: #EEE9E9;
 }
 .pieLogo {
     width: 40%;
@@ -64,4 +44,17 @@ body {
 .card {
     margin-bottom: 5%;
     margin-top: 5%;
+}
+.section__destacados {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: center;
+    margin: 5%;
+}
+
+.img-thumbnail {
+    border-radius: 10%;
+    border-image: none;
+    border-style: none;
+    
 }

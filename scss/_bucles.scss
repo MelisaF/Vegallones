@@ -5,19 +5,3 @@
 //         font-size: 1rem + (1/$i);
 //     }
 // }
-
-@each $color, $valor in $colores {
-    .zone#{$color} {
-        background: $valor;   
-    }
-}
-
-@each $boton, $colors in $botones {
-    .btn__note--#{$boton} {
-        background-color: $colors;
-        border-radius:50%;
-        width:10%;
-        padding-left: 1%;
-        
-    }
-}

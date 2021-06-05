@@ -1,15 +1,16 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold; }
 
 h1 {
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 2%; }
 
 h2 {
   margin-top: 2%;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   animation: bounce;
   animation-duration: 2s;
   font-size: 1,5rem;
@@ -21,9 +22,6 @@ h2 {
 h3 {
   font-weight: bold;
   margin-top: 2%; }
-
-p {
-  text-transform: uppercase; }
 
 /*BEM */
 .mapaSitio__title {
@@ -52,32 +50,14 @@ p {
   text-decoration: none;
   color: black; }
 
-.banner__imagen img {
-  height: 700px;
-  width: 100%; }
-
 .logoImg {
   width: 30%;
   height: 20%; }
 
 body {
   margin: 0%;
-  padding: 0%; }
-
-.section {
-  display: flex;
-  justify-content: center; }
-  .section .imgDestacada {
-    width: 80%;
-    height: 80%;
-    margin-top: 5%;
-    margin-left: 10%;
-    border-radius: 15%; }
-
-.imgLogo {
-  width: 30%;
-  height: 30%;
-  margin-bottom: 5%; }
+  padding: 0%;
+  background: #EEE9E9; }
 
 .pieLogo {
   width: 40%;
@@ -110,6 +90,16 @@ body {
   margin-bottom: 5%;
   margin-top: 5%; }
 
+.section__destacados {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  justify-content: center;
+  margin: 5%; }
+
+.img-thumbnail {
+  border-radius: 10%;
+  border-image: none; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -140,10 +130,10 @@ input:hover {
   grid-template-columns: 25% 25% 25% 25%;
   margin-left: 2%; }
 
-.mb-3 {
+.cuadro__msj--formulario {
   display: flex;
-  align-items: center;
-  width: 50%; }
+  flex-direction: column;
+  justify-items: center; }
 
 div span {
   border-radius: 10%; }
@@ -215,33 +205,3 @@ div span {
 
 footer {
   background: #c5efaf; }
-
-.zonecaba {
-  background: #58D68D; }
-
-.zonenorte {
-  background: #52BE80; }
-
-.zoneoeste {
-  background: #DAF7A6; }
-
-.zonesur {
-  background: #B8E664; }
-
-.btn__note--productos {
-  background-color: #A9DE49;
-  border-radius: 50%;
-  width: 10%;
-  padding-left: 1%; }
-
-.btn__note--ubicacion {
-  background-color: #C0F165;
-  border-radius: 50%;
-  width: 10%;
-  padding-left: 1%; }
-
-.btn__note--aqui {
-  background-color: red;
-  border-radius: 50%;
-  width: 10%;
-  padding-left: 1%; }

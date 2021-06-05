@@ -21,7 +21,7 @@
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     
     <!-- CODIGO CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -61,22 +61,29 @@
     <section class="cuadro__msj">
         <h1>DEJANOS TU COMENTARIO</h1>
         <h2>RESPONDEREMOS A LA BREVEDAD</h2>
-        <div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">NOMBRE</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="TU NOMBRE">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NOMBRE@GMAIL.COM">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">MENSAJE</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div> 
-            <div>
-                <button type="button" class="btn btn-light">ENVIAR</button>
-            </div>
+        <div class="cuadro__msj--formulario">
+            <form action="#">
+                <div class="cuadro__msj--datos">
+                    <label for="name">NOMBRE</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="cuadro__msj--datos">
+                    <label for="email">EMAIL</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="cuadro__msj--datos">    
+                    <label for="tel">TELEFONO</label>
+                    <input type="text" name="tel">
+                </div>
+                <div class="cuadro__msj--datos">    
+                    <label for="mensaje">MENSAJE</label><br>
+                    <textarea name="mensaje" width:50%></textarea>
+                </div>
+                <div class="cuadro__msj--datos">
+                    <button class="boton boton--secundario" type="submit">ENVIAR</button>
+                    <button class="boton boton--secundario" type="reset" value="borrar">BORRAR</button>
+                </div>
+            </form>
         </div>
     </section>
     <!-- PIE DE PAGINA -->
