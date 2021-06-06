@@ -9,15 +9,13 @@ h1 {
 
 h2 {
   margin-top: 2%;
+  margin-bottom: 2%;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   animation: bounce;
   animation-duration: 2s;
   font-size: 1,5rem;
   font-weight: bold; }
-
-.deja__coment {
-  text-align: center; }
 
 h3 {
   font-weight: bold;
@@ -52,7 +50,7 @@ h3 {
 
 .logoImg {
   width: 30%;
-  height: 20%; }
+  height: 30%; }
 
 body {
   margin: 0%;
@@ -94,23 +92,20 @@ body {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   justify-content: center;
-  margin: 5%; }
+  margin: 5%;
+  border-color: #c5efaf; }
 
 .img-thumbnail {
-  border-radius: 10%;
-  border-image: none; }
+  border-radius: 15%;
+  background-color: transparent;
+  transition: transform .2s; }
+  .img-thumbnail :hover {
+    transform: scale(1.5); }
 
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
-
-input {
-  transition: all 2s; }
-
-input:hover {
-  width: 60%;
-  font-size: 1.5rem; }
 
 .piePagina {
   display: grid;
@@ -133,32 +128,53 @@ input:hover {
 .cuadro__msj--formulario {
   display: flex;
   flex-direction: column;
-  justify-items: center; }
-
-div span {
-  border-radius: 10%; }
-  div span a {
-    text-decoration: none;
-    color: black; }
-
-.error__section {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 20%; }
+  border-radius: 5%; }
+
+nav {
+  background-color: #c5efaf; }
+
+.contenedorNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+input {
+  border-radius: 20%; }
+
+form {
+  width: 50%;
+  margin-left: 25%;
+  /*al agregar esto si me lo tomo, lo anterior no*/ }
+
+.boton .boton--secundario {
+  align-items: flex-end;
+  padding-bottom: 5%;
+  /*esto no me lo toma*/ }
 
 /*MEDIA QUERIES*/
 @media (max-width: 568px) {
   h1 {
-    font-size: 0.6rem; }
+    font-size: 0.9rem; }
   h2 {
-    font-size: 0.8rem;
-    font-weight: bold; }
+    font-size: 0.8rem; }
   h3 {
     font-size: 0.7rem; }
   h6 {
     font-size: 0.6rem;
     font-weight: bold; }
+  .red__social--title {
+    font-size: 0.6rem; }
+  label {
+    font-size: 0.6rem; }
+  .galeria__fotos {
+    margin-left: 5%;
+    margin-bottom: 5%; }
+  .card {
+    height: 30%;
+    width: 20%; }
+  .cuadro__msj--datos {
+    font-size: 0.6rem; }
   .mapaSitio__title {
     font-size: 0.6rem; }
   .mapaSitio__title--lista {
@@ -173,18 +189,13 @@ div span {
   .imgLogo {
     width: 20%;
     height: 20%; }
-  .banner__imagen img {
-    height: 100px; }
   .galeriaImg__fotos {
     width: 60%;
     height: 80%; }
   .btn__note {
     color: black;
     text-decoration: none;
-    font-size: 0.8rem; }
-  span a {
-    text-decoration: none;
-    color: black; } }
+    font-size: 0.8rem; } }
 
 @media (max-width: 768px) {
   .banner img {
