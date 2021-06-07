@@ -12,7 +12,6 @@ h1 {
 }
 h2 {
     margin-top: 2%;
-    margin-bottom: 2%;
     text-align: center;
     font-family: $letter-font;
     animation: bounce; 
@@ -29,15 +28,15 @@ h3 {
 /*BEM */
 .mapaSitio__title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
-    margin-left: 2%;
     padding-top: 12%;
+    
 }
 
 .mapaSitio__title--lista {
     list-style: none;
-    text-transform: uppercase;
+    margin: 0%;
     a {
         text-decoration: none;
         color: black;
@@ -51,14 +50,15 @@ h3 {
 .red__social--title {
     font-weight: bold;
     margin-top:5%;
-    font-size: 1rem;
+    margin-left: 3%;
+    font-size: 0.9rem;
 }
 
-.error__section {
-    div {
-        a{
-            text-decoration: none;
-            color: black;
-        }
-    }
+.card-title {
+    font-weight: bold;
+    align-items: center;
+}
+
+.card-body {
+    align-items: center;
 }

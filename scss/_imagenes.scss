@@ -21,7 +21,9 @@ body {
     width: 6%;
     height: 15%;
 }
-
+.red__social--img {
+    margin-left: 10%;
+}
 .mapa {
     margin-left: 10%;
     margin-bottom: 10%;
@@ -40,26 +42,18 @@ body {
     margin-left: 12%;
     margin-bottom: 5%;
 }    
-
-.card {
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-.section__destacados {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+.row .row-cols-1 .row-cols-md-3 .g-4 {
+    display:flex;
     justify-content: center;
-    margin: 5%;
-    border-color: #c5efaf;
+    margin-left: 10%;
+}
+.col {
+    width: 25%;
+    height:25%;
+}
+.card {
+    margin:5% 5% 5% 2%;
 }
 
-.img-thumbnail {
-    border-radius: 15%;
-    background-color: transparent;
-    transition: transform .2s;
-    :hover {
-        transform: scale(1.5);
-    }
-}
 
 
