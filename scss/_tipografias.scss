@@ -2,22 +2,26 @@
 
 body {
     font-family: $letter-font;
-    font-weight: bold;
+
 }
 
 h1 {
+    margin-top: 3%;
     text-align: center;
     font-weight: bold;
-    margin-top: 2%;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
 }
 h2 {
     margin-top: 2%;
+    margin-bottom: 1%;
     text-align: center;
-    font-family: $letter-font;
     animation: bounce; 
     animation-duration: 2s;
     font-size: 1,5rem;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
 }
 
 h3 {
@@ -30,7 +34,8 @@ h3 {
     font-weight: bold;
     font-size: 0.9rem;
     text-transform: uppercase;
-    padding-top: 12%;
+    margin-top: 10%;
+    color: black;
     
 }
 
@@ -38,27 +43,56 @@ h3 {
     list-style: none;
     margin: 0%;
     a {
+        font-weight: bold;
         text-decoration: none;
-        color: black;
+        color:black;
+        line-height: 2pt;
+        font-size: 1rem;
     }
     :hover{
-        color:white;
+        color: #BDBDBD;
     }
 }
 
 /*BEM */
 .red__social--title {
     font-weight: bold;
-    margin-top:5%;
-    margin-left: 3%;
     font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top:13%;
+    color:black;
 }
 
 .card-title {
-    font-weight: bold;
-    align-items: center;
+    font-size: 1.2rem;
 }
-
-.card-body {
-    align-items: center;
+.card-text {
+    font-size: 1rem;
+}
+.nav-link {
+    font-weight: bold;
+    color: white;
+}
+.navbar-nav {
+    color:white;
+    a{
+        color: white;
+    :hover {
+        color: #BDBDBD;
+    }
+    }
+}
+.section__promos {
+    font-size: 0.8rem;
+}
+.section__promos--productos {
+        a {
+            color:black;
+            text-decoration:none;
+            text-align:center;
+            font-size: 0.8rem;
+        }
+}
+p {
+    font-size: 0.9rem;
 }

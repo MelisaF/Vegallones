@@ -8,7 +8,7 @@
 
 footer {
     @if $fondo==claro {
-        background: #c5efaf;
+        background: #c9e265;
     }   
         @else if $fondo ==oscuro {
             background:beige;

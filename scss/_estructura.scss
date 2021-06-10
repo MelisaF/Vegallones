@@ -12,13 +12,10 @@ footer {
     display: grid;
     grid-template-columns: 35% 30% 35%;
     justify-items: center;
+    background: #c9e265;
 }
-.mapaSitio {
-    margin: 6%;
-}
-.red__social {
-    padding-top: 5%;
-    margin-left: 10%;
+.red__social--title {
+    margin-top: 5%;
 }
 
 /*BEM*/
@@ -38,20 +35,34 @@ footer {
 }
 
 nav {
-    background-color: #c5efaf;
+    background-color: #c9e265;
 }
 .contenedorNav {
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    width: 100%;
+}
+.navbar-nav {
+    margin-left: 30%;
+}
 
-} 
+.maps {
+    margin-left: 13%;
+    margin-top: 3%;
+}
+.nav-link {
+    margin-right: 3.5rem;
+    border-radius: 13%;
+}
+
 
 .botones {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 2%;
+    margin:3%;
+}
+.boton .boton--secundario {
+    border-radius: 3%;
+    margin: 4%;
 }
 
 
@@ -64,23 +75,60 @@ form {
     margin: auto;
 }
 
-.boton .boton--secundario {
-    align-items: flex-end;
-    padding-bottom: 5%; /*esto no me lo toma*/
-
+.section__promos {
+    position: relative;
+    background-image:url(../img/imgPromo.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    width: 30%;
+    margin-left: 33%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    justify-items: center;
+    
+    --title {
+        position:absolute;
+        left: 10%;
+        
+        --pack {
+            position:absolute;
+            left: 10%;
+        
+            --productos {
+                position:absolute;
+                left: 10%;
+                background: #c9e265;
+            }
+        }
+    }
 }
 
+.card-body {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #c9e265, white);
+}
+.card {
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border-radius: 10%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
 /*MEDIA QUERIES*/
 
 @media (max-width:568px) {
     h1 {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
     h2 {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
     h3 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     }
 
     h6 {
@@ -94,35 +142,29 @@ form {
         font-size: 0.6rem;
     }
     .galeria__fotos {
-        margin-left: 5%;
-        margin-bottom: 5%;
+    margin-bottom: 5%;
     }
-    .card {
-        height: 30%;
-        width: 20%;
-    }
-    
-    .cuadro__msj--datos {
-        font-size: 0.6rem;
-    }
+        
     .mapaSitio__title {
-    font-size: 0.6rem;
-    }
-    
+        font-size: 0.8rem;
+        }
     .mapaSitio__title--lista {
-    font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .red__social--title {
+        margin-top: 8%;
+        font-size: 0.8rem;
+    }
+    .red__social--img {
+        margin-left: 15%;
+    }
+    .maps {
+        width: 90%;
+        margin: 3%;
     }
     
     p {    
-    font-size: 0.5rem;
-    }
-    .sectionCuadro {
-        display:flex;
-        align-items: center;
-    }
-    
-    ul li a {
-        font-size: 0.5rem;
+    font-size: 0.7rem;
     }
 
     .imgLogo {
@@ -130,43 +172,35 @@ form {
         height: 20%;
     }
     
-
-    .galeriaImg__fotos {
-        width: 60%;
-        height: 80%;
-    }
-    .btn__note {
-        color:black;
-        text-decoration:none;
-        font-size: 0.8rem;
-    }
     form {
-        width: 100%;
+        width: 60%;
         margin: auto;
     }
+    .botones {
+        font-size: 0.8rem;
+    .pieLogo {
+        width: 10%;
+        height: 15%;
+    }
 }
+    
 
 
 @media (max-width:768px) {
-    .banner img {
-        height: 300px;
-    }
+    
     .pieLogo {
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
     }
     h3 {
         font-size: 1rem;
     }
-    .section__fotos--texto {
-        width: 50%;
-        height: 60%;
-        font-size: 0.7rem;
-    }
+    
 }
 
 @media (min-width:1024px) {
     .navbar-collapse {
         flex-grow: 0;
     }
+}
 }
