@@ -7,12 +7,14 @@
 
 footer {
     $fondo:claro;
+    height: 35%;
 }
 .piePagina {
     display: grid;
     grid-template-columns: 35% 30% 35%;
     justify-items: center;
     background: #c9e265;
+    height: 35%;
 }
 .red__social--title {
     margin-top: 5%;
