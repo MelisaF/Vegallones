@@ -29,11 +29,12 @@ h3 {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-top: 10%;
-  color: black; }
+  color: black;
+  margin-top: 15%; }
 
 .mapaSitio__title--lista {
   list-style: none;
-  margin: 0%; }
+  margin: 5%; }
   .mapaSitio__title--lista a {
     font-weight: bold;
     text-decoration: none;
@@ -48,7 +49,7 @@ h3 {
   font-weight: bold;
   font-size: 0.9rem;
   text-transform: uppercase;
-  margin-top: 13%;
+  margin-top: 15%;
   color: black; }
 
 .card-title {
@@ -78,7 +79,14 @@ h3 {
   font-size: 0.8rem; }
 
 .promoTitle {
-  align-items: center; }
+  margin-left: 3%; }
+
+.promoPack {
+  margin-left: 35%;
+  font-size: 1rem; }
+
+.section__promos--productos {
+  margin-left: 32%; }
 
 p {
   font-size: 0.9rem; }
@@ -91,7 +99,7 @@ p {
 .pieLogo {
   width: 30;
   height: 30%;
-  margin-top: 10%; }
+  margin-top: 15%; }
 
 body {
   margin: 0%;
@@ -110,7 +118,7 @@ body {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   justify-content: center;
-  margin-left: 12%;
+  margin-left: 20%;
   margin-bottom: 5%; }
 
 .section__destacados {
@@ -121,6 +129,9 @@ body {
 
 .card {
   border-radius: 20%; }
+
+.maps {
+  align-items: center; }
 
 * {
   margin: 0%;
@@ -135,7 +146,8 @@ footer {
   grid-template-columns: 35% 30% 35%;
   justify-items: center;
   background: #c9e265;
-  height: 35%; }
+  height: 35%;
+  font-weight: 1.5pt; }
 
 .red__social--title {
   margin-top: 5%; }
@@ -164,10 +176,6 @@ nav {
 .navbar-nav {
   margin-left: 30%; }
 
-.maps {
-  margin-left: 13%;
-  margin-top: 3%; }
-
 .nav-link {
   margin-right: 3.5rem;
   border-radius: 13%; }
@@ -189,25 +197,14 @@ form {
   margin: auto; }
 
 .section__promos {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35%;
+  margin-bottom: 5%;
   background-image: url(../img/imgPromo.png);
   background-size: 100% 100%;
-  overflow: hidden;
-  width: 30%;
-  margin-left: 33%;
-  margin-bottom: 5%;
-  border-radius: 5%;
-  justify-items: center; }
-  .section__promos --title {
-    position: absolute;
-    left: 10%; }
-    .section__promos --title --pack {
-      position: absolute;
-      left: 10%; }
-      .section__promos --title --pack --productos {
-        position: absolute;
-        left: 10%;
-        background: #c9e265; }
+  width: 20%; }
 
 .card-body {
   text-align: center;
@@ -222,6 +219,9 @@ form {
   display: flex;
   flex-direction: column;
   background-color: white; }
+
+iframe {
+  width: 100%; }
 
 /*MEDIA QUERIES*/
 @media (max-width: 568px) {
@@ -238,8 +238,6 @@ form {
     font-size: 0.6rem; }
   label {
     font-size: 0.6rem; }
-  .galeria__fotos {
-    margin-bottom: 5%; }
   .mapaSitio__title {
     font-size: 0.8rem; }
   .mapaSitio__title--lista {
@@ -249,9 +247,6 @@ form {
     font-size: 0.8rem; }
   .red__social--img {
     margin-left: 15%; }
-  .maps {
-    width: 90%;
-    margin: 3%; }
   p {
     font-size: 0.7rem; }
   .imgLogo {
@@ -262,24 +257,55 @@ form {
     margin: auto; }
   .botones {
     font-size: 0.8rem; }
-    .botones .pieLogo {
-      width: 10%;
-      height: 15%; } }
+  .pieLogo {
+    width: 10%;
+    height: 15%;
+    margin-left: 20%; }
+  .section__promos {
+    width: 30%; }
+  .section__destacados {
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%; }
+  .galeria__fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center; }
+  .delivery__zone {
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    margin-left: 10%; } }
 
-@media (max-width: 568px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .pieLogo {
     width: 60%;
     height: 60%; }
   h3 {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .maps {
+    width: 100%;
+    margin-left: 15%; }
+  .delivery__zone {
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    margin-left: 10%; }
+  .galeria__fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: flex-start; } }
 
-@media (max-width: 568px) and (min-width: 1024px) {
-  .navbar-collapse {
-    flex-grow: 0; } }
-
-.banner__imagen img {
-  height: 700px;
-  width: 100%; }
+@media (min-width: 1024px) {
+  .contenedorNav {
+    display: flex;
+    flex-direction: row; }
+  .navbar-nav {
+    margin-left: 0%; }
+  .galeria__fotos {
+    justify-content: flex-start;
+    margin-left: 2%; }
+  .maps {
+    margin-left: 2%; } }
 
 footer {
   background: #c9e265; }

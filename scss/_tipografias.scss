@@ -2,7 +2,6 @@
 
 body {
     font-family: $letter-font;
-
 }
 
 h1 {
@@ -12,6 +11,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1pt;
 }
+
 h2 {
     margin-top: 2%;
     margin-bottom: 1%;
@@ -36,12 +36,13 @@ h3 {
     text-transform: uppercase;
     margin-top: 10%;
     color: black;
+    margin-top: 15%;
     
 }
 
 .mapaSitio__title--lista {
     list-style: none;
-    margin: 0%;
+    margin: 5%;
     a {
         font-weight: bold;
         text-decoration: none;
@@ -59,7 +60,7 @@ h3 {
     font-weight: bold;
     font-size: 0.9rem;
     text-transform: uppercase;
-    margin-top:13%;
+    margin-top:15%;
     color:black;
 }
 
@@ -94,7 +95,15 @@ h3 {
         }
 }
 .promoTitle {
-    align-items: center;
+    margin-left: 3%;
+}
+.promoPack {
+    margin-left: 35%;
+    font-size: 1rem;
+}
+
+.section__promos--productos {
+    margin-left: 32%;
 }
 p {
     font-size: 0.9rem;

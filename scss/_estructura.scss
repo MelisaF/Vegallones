@@ -15,6 +15,7 @@ footer {
     justify-items: center;
     background: #c9e265;
     height: 35%;
+    font-weight: 1.5pt;
 }
 .red__social--title {
     margin-top: 5%;
@@ -47,15 +48,10 @@ nav {
     margin-left: 30%;
 }
 
-.maps {
-    margin-left: 13%;
-    margin-top: 3%;
-}
 .nav-link {
     margin-right: 3.5rem;
     border-radius: 13%;
 }
-
 
 .botones {
     display: flex;
@@ -78,32 +74,16 @@ form {
 }
 
 .section__promos {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35%;
+    margin-bottom: 5%;
     background-image:url(../img/imgPromo.png);
     background-size: 100% 100%;
-    overflow: hidden;
-    width: 30%;
-    margin-left: 33%;
-    margin-bottom: 5%;
-    border-radius: 5%;
-    justify-items: center;
-    
-    --title {
-        position:absolute;
-        left: 10%;
-        
-        --pack {
-            position:absolute;
-            left: 10%;
-        
-            --productos {
-                position:absolute;
-                left: 10%;
-                background: #c9e265;
-            }
-        }
-    }
+    width: 20%;
 }
+
 
 .card-body {
     text-align: center;
@@ -119,6 +99,10 @@ form {
     display: flex;
     flex-direction: column;
     background-color: white;
+}
+
+iframe {
+    width: 100%;
 }
 /*MEDIA QUERIES*/
 
@@ -143,13 +127,9 @@ form {
     label {
         font-size: 0.6rem;
     }
-    .galeria__fotos {
-    margin-bottom: 5%;
-    }
-        
     .mapaSitio__title {
         font-size: 0.8rem;
-        }
+    }
     .mapaSitio__title--lista {
         font-size: 0.8rem;
     }
@@ -159,10 +139,6 @@ form {
     }
     .red__social--img {
         margin-left: 15%;
-    }
-    .maps {
-        width: 90%;
-        margin: 3%;
     }
     
     p {    
@@ -180,13 +156,32 @@ form {
     }
     .botones {
         font-size: 0.8rem;
+    }
     .pieLogo {
         width: 10%;
         height: 15%;
+        margin-left: 20%;
+    }
+    .section__promos {
+        width: 30%;
+    }
+    .section__destacados {
+        display: grid;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+    }
+    
+    .galeria__fotos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+    .delivery__zone {
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        margin-left: 10%;
     }
 }
-    
-
 
 @media (max-width:768px) {
     
@@ -197,12 +192,38 @@ form {
     h3 {
         font-size: 1rem;
     }
+    .maps {
+        width: 100%;
+        margin-left: 15%;
+    }
     
+    .delivery__zone {
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+    .galeria__fotos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width:1024px) {
-    .navbar-collapse {
-        flex-grow: 0;
+    .contenedorNav {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-nav {
+        margin-left: 0%;
+    }
+    .galeria__fotos {
+        justify-content: flex-start;
+        margin-left: 2%;
+    }    
+    .maps {
+        margin-left: 2%;
     }
 }
-}
+
