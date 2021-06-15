@@ -138,15 +138,11 @@ body {
   padding: 0%;
   box-sizing: border-box; }
 
-footer {
-  height: 35%; }
-
 .piePagina {
   display: grid;
   grid-template-columns: 35% 30% 35%;
   justify-items: center;
   background: #c9e265;
-  height: 35%;
   font-weight: 1.5pt; }
 
 .red__social--title {
@@ -196,16 +192,6 @@ form {
   width: 50%;
   margin: auto; }
 
-.section__promos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 35%;
-  margin-bottom: 5%;
-  background-image: url(../img/imgPromo.png);
-  background-size: 100% 100%;
-  width: 20%; }
-
 .card-body {
   text-align: center;
   background-image: linear-gradient(to bottom, #c9e265, white); }
@@ -223,6 +209,16 @@ form {
 iframe {
   width: 100%; }
 
+.section__sabor {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 3%;
+  margin-right: 2%; }
+
+.button__comprar {
+  width: 15%;
+  height: 10%; }
+
 /*MEDIA QUERIES*/
 @media (max-width: 568px) {
   h1 {
@@ -234,43 +230,46 @@ iframe {
   h6 {
     font-size: 0.6rem;
     font-weight: bold; }
-  .red__social--title {
-    font-size: 0.6rem; }
   label {
     font-size: 0.6rem; }
   .mapaSitio__title {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    line-height: 2;
+    margin-left: 10%; }
   .mapaSitio__title--lista {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    margin-left: 10%; }
   .red__social--title {
+    margin-left: 10%;
     margin-top: 8%;
     font-size: 0.8rem; }
   .red__social--img {
-    margin-left: 15%; }
+    margin-left: 10%;
+    margin-bottom: 5%; }
   p {
     font-size: 0.7rem; }
   .imgLogo {
     width: 20%;
     height: 20%; }
   form {
-    width: 60%;
-    margin: auto; }
+    width: 100%; }
   .botones {
     font-size: 0.8rem; }
+  .piePagina {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start; }
   .pieLogo {
     width: 10%;
-    height: 15%;
-    margin-left: 20%; }
-  .section__promos {
-    width: 30%; }
+    height: 10%;
+    margin-left: 3%; }
   .section__destacados {
     display: grid;
     grid-template-rows: 33.3% 33.3% 33.3%; }
   .galeria__fotos {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center; }
+    align-items: center; }
   .delivery__zone {
     grid-template-columns: 1fr;
     justify-content: flex-start;
@@ -288,7 +287,8 @@ iframe {
   .delivery__zone {
     grid-template-columns: 1fr;
     justify-content: flex-start;
-    margin-left: 10%; }
+    margin-left: 10%;
+    border-radius: 5%; }
   .galeria__fotos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
